@@ -3,8 +3,18 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5161)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
+# WPF MVVM Behaviors - Create a Custom Attached Behavior
+
+Each Behavior is a **Behavior&lt;T&gt;** class descendant. The **T** parameter defines the associated control type.
+
+The **Behavior&lt;T&gt;** class contains the **AssociatedObject** property. DevExpress MVVM Framework specifies this property when you add a Behavior to the Behaviors collection. 
+
+After the AssociatedObject is specified, DevExpress MVVM Framework invokes the virtual **OnAttached** method. You can override this method to subscribe to AssociatedObject's events and initialize its properties. 
+
+To unsubscribe from events, you can use the virtual **OnDetaching** method. DevExpress MVVM Framework invokes when the Behavior is destroyed.
+
 <!-- default file list -->
-*Files to look at*:
+## Files to Look At
 
 * [ValidationBehavior.cs](./CS/Behaviors/ValidationBehavior.cs) (VB: [ValidationBehavior.vb](./VB/Behaviors/ValidationBehavior.vb))
 * [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
@@ -13,11 +23,7 @@
 * [MainView.xaml.cs](./CS/View/MainView.xaml.cs) (VB: [MainView.xaml.vb](./VB/View/MainView.xaml.vb))
 * [MainViewModel.cs](./CS/ViewModel/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/ViewModel/MainViewModel.vb))
 <!-- default file list end -->
-# How to: Create a Custom Attached Behavior
 
+## Documentation
 
-<p>This example demonstrates how to create a custom attached behavior (a Behavior descendant).<br />Review <a href="https://documentation.devexpress.com/#WPF/CustomDocument17458">this documentation topic</a> to learn more.</p>
-
-<br/>
-
-
+- [Behaviors](https://docs.devexpress.com/WPF/17442/mvvm-framework/behaviors)
