@@ -1,19 +1,25 @@
-﻿Imports DevExpress.Mvvm.DataAnnotations
+Imports DevExpress.Mvvm.DataAnnotations
 Imports System.Windows.Media
 
 Namespace Example.ViewModel
-    <POCOViewModel> _
+
+    <POCOViewModel>
     Public Class MainViewModel
-        Public Overridable Property InvalidValue() As String
-        Public Overridable Property ValidBrush() As Brush
-        Public Overridable Property InvalidBrush() As Brush
+
+        Public Overridable Property InvalidValue As String
+
+        Public Overridable Property ValidBrush As Brush
+
+        Public Overridable Property InvalidBrush As Brush
 
         Public Sub SetRedValidBrush()
             ValidBrush = New SolidColorBrush(Colors.Red)
         End Sub
+
         Public Sub SetBlueValidBrush()
             ValidBrush = New SolidColorBrush(Colors.Blue)
         End Sub
+
         Public Sub SetBlackValidBrush()
             ValidBrush = New SolidColorBrush(Colors.Black)
         End Sub
@@ -21,9 +27,11 @@ Namespace Example.ViewModel
         Public Sub SetRedInvalidBrush()
             InvalidBrush = New SolidColorBrush(Colors.Red)
         End Sub
+
         Public Sub SetBlueInvalidBrush()
             InvalidBrush = New SolidColorBrush(Colors.Blue)
         End Sub
+
         Public Sub SetBlackInvalidBrush()
             InvalidBrush = New SolidColorBrush(Colors.Black)
         End Sub
