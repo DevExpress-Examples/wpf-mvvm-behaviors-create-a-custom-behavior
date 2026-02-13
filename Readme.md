@@ -29,7 +29,7 @@ To unsubscribe from events, you can use the virtual **OnDetaching** method. DevE
 
 - [Behaviors](https://docs.devexpress.com/WPF/17442/mvvm-framework/behaviors)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-mvvm-behaviors-create-a-custom-behavior&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-mvvm-behaviors-create-a-custom-behavior&~~~was_helpful=no)
 
